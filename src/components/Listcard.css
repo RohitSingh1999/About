@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    
+    align-items: center;
+    height: 100%; /* Adjust this based on your layout */
+  }
+  
+  .scroll-container {
+    overflow: hidden;
+    height: 100%px; /* Adjust height of the scrolling container */
+    width: 100%px; /* Adjust width of the scrolling container */
+    border: 1px solid #ccc;
+  }
+  
+  .scroll-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    animation: scrollList 10s linear infinite;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio of images */
+    display: block;
+  }
+  
+  @keyframes scrollList {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%); /* Scroll the list up by its own height */
+    }
+  }
+  
